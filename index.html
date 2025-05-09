@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulir Seleksi P3K</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      max-width: 600px;
+      margin: auto;
+      background-color: #f9f9f9;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 15px;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #4285f4;
+      color: white;
+      border: none;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background-color: #3367d6;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Formulir Seleksi P3K</h2>
+
+  <form action="#" method="post">
+    <label>Nama Lengkap:
+      <input type="text" name="nama" required>
+    </label>
+
+    <label>NIK:
+      <input type="text" name="nik" required>
+    </label>
+
+    <label>Tempat dan Tanggal Lahir:
+      <input type="text" name="ttl" placeholder="Contoh: Jakarta, 01 Januari 2000" required>
+    </label>
+
+    <label>Alamat:
+      <textarea name="alamat" rows="3" required></textarea>
+    </label>
+
+    <label>Jenis Kelamin:
+      <select name="jenis_kelamin" required>
+        <option value="">-- Pilih --</option>
+        <option value="Laki-laki">Laki-laki</option>
+        <option value="Perempuan">Perempuan</option>
+      </select>
+    </label>
+
+    <label>Agama:
+      <input type="text" name="agama">
+    </label>
+
+    <label>Status Perkawinan:
+      <select name="status" required>
+        <option value="">-- Pilih --</option>
+        <option value="Belum Menikah">Belum Menikah</option>
+        <option value="Menikah">Menikah</option>
+        <option value="Cerai">Cerai</option>
+      </select>
+    </label>
+
+    <label>Nomor Telepon:
+      <input type="tel" name="telepon" required>
+    </label>
+
+    <label>Email:
+      <input type="email" name="email" required>
+    </label>
+
+    <label>Pendidikan Terakhir:
+      <input type="text" name="pendidikan">
+    </label>
+
+    <label>Institusi Pendidikan:
+      <input type="text" name="institusi">
+    </label>
+
+    <label>Tahun Lulus:
+      <input type="text" name="tahun_lulus">
+    </label>
+
+    <button type="submit">Kirim</button>
+  </form>
+
+</body>
+</html>
